@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Servicios - Cerilio</title>
+<style>
+  body {
+    background-color: #c2b4a5;
+    color: #111010;
+    font-family: 'Baskerville Old Face', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #5e4b3f;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #4c3a2f;
+  }
+  
+  .navigation {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #333;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            padding: 15px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 999;
+        }
+
+        .menu-icon {
+            width: 25px;
+            height: 3px;
+            background-color: #000000e8;
+            margin: 5px 0;
+        }
+</style>
+</head>
+<body>
+
+<h1>Formulario de Servicios - Casa de Salud</h1>
+
+<form action="#" method="post">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" name="telefono" required>
+
+  <label for="servicio">Servicio deseado:</label>
+  <select id="servicio" name="servicio">
+    <option value="Asesoramiento nutricional">Asesoramiento nutricional</option>
+    <option value="Consulta herbal">Consulta herbal</option>
+    <option value="Clases de cocina saludable">Clases de cocina saludable</option>
+    <option value="Otros">Otros</option>
+  </select>
+
+  <label for="mensaje">Mensaje:</label>
+  <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+  <input type="submit" value="Enviar">
+</form>
+<form action="enviar_formulario.php" method="post"></form>
+
+<nav class="navigation">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="services.html">Servicios</a></li>
+    </ul>
+</nav>
+<button class="toggle-btn" onclick="toggleNav()">
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+</button>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

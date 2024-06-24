@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verde Saludable</title>
+<style>
+  body {
+    background-color: #82a1b1;
+    color: #000000e3;
+    font-family: 'Baskerville Old Face', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .navigation {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #333;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            padding: 15px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 999;
+        }
+
+        .menu-icon {
+            width: 25px;
+            height: 3px;
+            background-color: #000000e8;
+            margin: 5px 0;
+        }
+        .facebook{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    left: 150px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>¡Bienvenido a <span style="color: #5e4b3f;">Cerilio</span>!</h1>
+  <p>En la Casa de Salud no vendemos medicamentos, hacemos consultas médicas donde te ofrecemos un servicio incorparable. Contamos cona gran variedad de servicios; chequeos de la presión, examén cuántico, etc.</p>
+  <ul style="text-align: left;">
+    <li><strong>Calidad y autenticidad:</strong> Nos esforzamos por ofrecer productos de la más alta calidad, seleccionando cuidadosamente los mejores ingredientes.</li>
+    <li><strong>Conciencia ambiental:</strong> Estamos comprometidos con la protección del medio ambiente y trabajamos para minimizar nuestro impacto ambiental al optar por productos orgánicos y sostenibles siempre que sea posible.</li>
+  </ul>
+  <p><strong>Nuestros Productos:</strong> En la Casa de Salud, ofrecemos una amplia variedad de productos naturales y orgánicos, incluyendo alimentos orgánicos, suplementos naturales, hierbas medicinales y productos de cuidado personal naturales.</p>
+  <p><strong>Visítenos:</strong> ¡Lo invitamos a visitar nuestro consultorio, ubicado en Potrero del Llano, situado en Calle Constitución S/N!</p>
+    <div class="facebook">
+      <img src="Imagenes/fb.jpg" alt="Facebook" width="250px" height="250px"><br>
+      <a href="https://www.facebook.com/profile.php?id=100089863830899">Casa de Salud - OFICIAL</a>
+  </div> 
+
+<nav class="navigation">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="services.html">Servicios</a></li>
+    </ul>
+</nav>
+<button class="toggle-btn" onclick="toggleNav()">
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
